@@ -1,0 +1,10 @@
+{
+	"id": "nodebb-plugin-niconico",
+	"name": "NodeBB NicoNico Plugin",
+	"description": "NodeBB Plugin that allows users to embed NicoNico Douga videos inline in their posts.",
+	"url": "https://github.com/JLChnToZ/nodebb-plugin-niconico",
+	"library": "./index.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true }
+	]
+}
