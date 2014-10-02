@@ -7,6 +7,9 @@
 	"staticDirs": {
         "embed": "static"
     },
+	"less": [
+		"static/responsive-embed.less"
+	],
 	"hooks": [
 		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true }
 	]
