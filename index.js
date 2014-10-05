@@ -15,9 +15,13 @@
   ];
 
   nico.parse = function(postContent, callback) {
-    for(var i = 0; i < converts.length; i++)
-      postContent = postContent.replace(converts[i].from, converts[i].to);
-    callback(null, postContent);
+    try {
+      for(var i = 0; i < converts.length; i++)
+        postContent = postContent.replace(converts[i].from, converts[i].to);
+      callback(null, postContent);
+    } catch(ex) {
+      callback(ex, postContent);
+    }
   };
 
 })(module.exports);
