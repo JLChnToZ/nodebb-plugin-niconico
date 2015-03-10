@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-niconico",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "NodeBB Plugin that allows users to embed NicoNico Douga videos inline in their posts.",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,12 @@
   "bugs": {
     "url": "https://github.com/JLChnToZ/nodebb-plugin-niconico/issues"
   },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-plugin-niconico@0.5.2",
+  "_from": "nodebb-plugin-niconico@~0.5.2",
   "homepage": "https://github.com/JLChnToZ/nodebb-plugin-niconico"
 }

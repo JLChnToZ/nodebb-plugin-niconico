@@ -14,13 +14,13 @@
     }
   ];
 
-  nico.parse = function(postContent, callback) {
+  nico.parse = function(data, callback) {
     try {
       for(var i = 0; i < converts.length; i++)
-        postContent = postContent.replace(converts[i].from, converts[i].to);
-      callback(null, postContent);
+        data.postData.content = data.postData.content.replace(converts[i].from, converts[i].to);
+      callback(null, data);
     } catch(ex) {
-      callback(ex, postContent);
+      callback(ex, data);
     }
   };
 
