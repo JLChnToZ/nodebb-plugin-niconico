@@ -3,14 +3,14 @@
 
   var converts = [
     { // Video
-      from: /<a href="(?:http:\/\/)?(?:www\.)?nicovideo.jp\/watch\/(.+)">.+<\/a>/g,
+      from: /<a href="(?:(http|https):\/\/)?(?:www\.)?nicovideo.jp\/watch\/(.+)">.+<\/a>/g,
       to: '<div class="embed-responsive embed-responsive-16by9">'+
       '<iframe src="/plugins/nodebb-plugin-niconico/embed/plugin.html?$1" '+
       'class="embed-responsive-item"></iframe></div>'
     },
     { // User / Mylist / Community
-      from: /<a href="(?:http:\/\/)?(?:www\.)?nicovideo.jp\/(user|mylist|community)\/(.+)">.+<\/a>/g,
-      to: '<iframe src="http://ext.nicovideo.jp/thumb_$1/$2" width="312" height="176"></iframe>'
+      from: /<a href="(?:(http|https):\/\/)?(?:www\.)?nicovideo.jp\/(user|mylist|community)\/(.+)">.+<\/a>/g,
+      to: '<iframe src="https://ext.nicovideo.jp/thumb_$1/$2" width="312" height="176"></iframe>'
     }
   ];
 
